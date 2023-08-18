@@ -1,0 +1,16 @@
+[serviceweaver]
+binary = "./emojis"
+
+# This config file specifies the binary of your Service Weaver application and
+# specifies the address for the emojis listener
+# for single process and multiprocess deployments
+# Exercise 06
+
+[single]
+listeners.emojis = {address = "localhost:9000"}
+
+[multi]
+listeners.emojis = {address = "localhost:9000"}
+
+["emojis/ChatGPT"]
+api_key = "YOUR SECRET KEY GOES HERE"
